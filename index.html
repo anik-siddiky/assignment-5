@@ -49,34 +49,164 @@
         </section>
     </header>
     <main>
-        <section class="w-11/12 mx-auto bg-white h-96 rounded-2xl">
-            <div class="flex gap-5 pt-5 my-5">
-                <div class="flex gap-5 items-center bg-[#F4F7FF] p-7 rounded-xl">
-                    <div class="p-4 rounded-full bg-white">
-                        <img src="assets/checkbox.png" alt="">
+        <section class="w-11/12 mx-auto rounded-2xl ">
+            <div class="flex flex-row mt-5 gap-5">
+                <div class="w-9/12">
+                                    <!-- Top section -->
+                <div class="flex justify-between gap-5 p-6 mb-5 bg-white rounded-2xl">
+                    <div class="flex gap-5 items-center bg-[#F4F7FF] p-7 rounded-xl">
+                        <div class="p-4 rounded-full bg-white">
+                            <img src="assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[#00303C]">Task Assigned </p>
+                            <h5 class="text-3xl font-bold">5</h5>
+                        </div>
                     </div>
-                    <div>
-                        <p class="text-[#00303C]">Task Assigned </p>
-                        <h5 class="text-3xl font-bold">5</h5>
+                    <div class="flex gap-5 items-center rounded-xl py-6 pl-10 pr-20 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                        <div>
+                            <img src="assets/board.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-2xl text-white">Discover Something New Today!</h2>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] rounded-xl flex items-center py-[30px] px-10 gap-4">
+                        <div class="p-4 rounded-full bg-white">
+                            <img src="assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-xl">Wed, <br> <span class="font-bold">Jul 28 2025</span> </p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex gap-5 items-center rounded-xl py-6 pl-10 pr-20 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
-                    <div>
-                        <img src="assets/board.png" alt="">
+
+                <!-- Six Task Section -->
+                <div class="grid grid-cols-3 gap-9 bg-white rounded-2xl p-6 mt-">
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <h4 class="bg-white inline-block py-2 px-4 rounded-lg">ShopEase</h4>
+                        <h3 class="font-medium text-2xl mt-4">Fix Mobile Button Issue </h3>
+                        <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                            <p>Ensure the mobile button functions properly by fixing alignment</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Completed</button>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2 class="text-2xl text-white">Discover Something<br>New Today!</h2>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <h4 class="bg-white inline-block py-2 px-4 rounded-lg">CloudSync</h4>
+                        <h3 class="font-medium text-2xl mt-4">Add Dark Mode</h3>
+                        <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                            <p>Implement a dark mode feature to enhance user experience</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-medium">23 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <h4 class="bg-white inline-block py-2 px-4 rounded-lg">SwiftPay</h4>
+                        <h3 class="font-medium text-2xl mt-4">Optimize  Home page</h3>
+                        <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                            <p>Enhance the homepage by improving performance for better engagement.</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-medium">25 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <h4 class="bg-white inline-block py-2 px-4 rounded-lg">Meta</h4>
+                        <h3 class="font-medium text-2xl mt-4">Add new emoji 🤲</h3>
+                        <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                            <p>Include the emoji to expand user expression and interaction options</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-medium">27 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <h4 class="bg-white inline-block py-2 px-4 rounded-lg">Google LLC</h4>
+                        <h3 class="font-medium text-2xl mt-4">Integrate OpenAI API</h3>
+                        <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                            <p>Connect the OpenAI API to enable advanced AI-powered features</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-medium">29 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#F4F7FF] rounded-lg p-6">
+                        <h4 class="bg-white inline-block py-2 px-4 rounded-lg">Glassdoar</h4>
+                        <h3 class="font-medium text-2xl mt-4">Improve Job searching</h3>
+                        <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                            <p>Improve Glassdoor job search by refining filters</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                            <div>
+                                <p class="text-sm">Deadline</p>
+                                <h4 class="font-medium">31 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Completed</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-xl flex items-center py-[30px] pr-5 pl-5 gap-4">
-                    <div class="p-4 rounded-full bg-white">
-                        <img src="assets/calender.png" alt="">
-                    </div>
-                    <div>
-                        <p class="text-xl">Wed, <br> <span class="font-bold">Jul 28 2025</span> </p>
-                    </div>
+
                 </div>
+
+
+                <div class="w-3/12 pt-10 px-5 bg-white rounded-2xl">
+                    <div class="flex gap-2 justify-center">
+                        <img src="assets/activity.png" alt="">
+                        <p class="font-medium text-xl">Activity Log</p>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <button class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Clear History</button>
+                    </div>
+
+                </div>
+
+
             </div>
+
+
+
+
+
         </section>
     </main>
 
