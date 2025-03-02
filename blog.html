@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard - Blog</title>
+    <!-- Tailwind and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/b790b3a4b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body" class="font-[Poppins] bg-[#F4F7FF] pt-6">
+    <header class="w-11/12 mx-auto">
+        <section class="bg-white flex items-center justify-between rounded-2xl">
+            <a href="/index.html">
+                <div class="flex items-center p-5 gap-3">
+                    <div>
+                        <img class="hover:cursor-pointer" src="assets/logo.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-light text-4xl hover:cursor-pointer">Dev<span class="font-bold">Board</span>
+                        </h1>
+                    </div>
+                </div>
+            </a>
+
+            <div class="p-5">
+                <a href="/index.html">
+                    <button
+                        class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">Back
+                        to Desk</button>
+                </a>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <Section class="py-4">
+            <div class="w-11/12 mx-auto">
+                <h1 class="font-bold text-3xl text-center mb-5 text-black/70">Blogs</h1>
+
+                <!-- Question-1 -->
+                <div class="mb-3">
+                    <div class="p-4 bg-white rounded-lg mb-1 font-semibold text-xl text-black/70">
+                        <h2>Question-1: What are the different ways to select an element in the DOM?</h2>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg text-black/70">
+                        <p>Using getElementById</p>
+                        <p>Using getElementsByClassName</p>
+                        <p>Using getElementsByTagName</p>
+                        <p>Using querySelector</p>
+                        <p>Using querySelectorAll</p>
+                    </div>
+                </div>
+
+                <!-- Question-2 -->
+                <div class="mb-3">
+                    <div class="p-4 bg-white rounded-lg mb-1 font-semibold text-xl text-black/70">
+                        <h2>Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg text-black/70">
+                        <p class="font-bold">innerHTML</p>
+                        <ul>
+                            <li>Retrieves or sets the HTML content of an element.</li>
+                            <li>It parses and renders any HTML tags inside the string.</li>
+                            <li>If used for setting content, it can execute scripts inside script tags.</li>
+                        </ul>
+                        <br>
+                        <p class="font-bold">innerText</p>
+                        <ul>
+                            <li>Retrieves or sets only the visible text of an element.</li>
+                            <li>It ignores any hidden elements.</li>
+                            <li>It does not parse HTML tags. It treats them as plain text.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Question-3 -->
+                <div class="mb-3">
+                    <div class="p-4 bg-white rounded-lg mb-1 font-semibold text-xl text-black/70">
+                        <h2>Question-3: What is event delegation in the DOM?</h2>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg text-black/70">
+                        <p>Event delegation in JavaScript is a pattern that efficiently handles events.</p>
+                        <p>Events can be added to a parent element instead of adding to every single element.</p>
+                        <p>It refers to the process of using event propagation (bubbling) to handle events at a higher
+                            level in the DOM than the element on which the event originated.</p>
+                    </div>
+                </div>
+
+                <!-- Question-4 -->
+                <div class="mb-3">
+                    <div class="p-4 bg-white rounded-lg mb-1 font-semibold text-xl text-black/70">
+                        <h2>Question-4: What is event bubbling in the DOM?</h2>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg text-black/70">
+                        <p>In the DOM (Document Object Model), "event bubbling" refers to the behavior where when an
+                            event occurs on an element, it triggers not only on that element but also propagates upwards
+                            through the DOM hierarchy, reaching its parent elements and ancestors until it reaches the
+                            topmost element, allowing event handlers attached to parent elements to also react to the
+                            event that originated on a child element. </p>
+                    </div>
+                </div>
+
+                <!-- Question-5 -->
+                <div class="mb-3">
+                    <div class="p-4 bg-white rounded-lg mb-1 font-semibold text-xl text-black/70">
+                        <h2>Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg text-black/70">
+                        <p class="font-bold">Creating</p>
+                        <ul>
+                            <li>Use document.createElement(tagName) to create a new HTML element.</li>
+                        </ul>
+                        <br>
+                        <p class="font-bold">Adding</p>
+                        <ul>
+                            <li>Using appendChild() (Adds an element at the end)</li>
+                            <li>Using append() (Allows adding text and multiple elements)</li>
+                        </ul>
+                        <br>
+                        <p class="font-bold">Removing</p>
+                        <ul>
+                            <li>Using remove()</li>
+                            <li>removeChild()</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </Section>
+    </main>
+
+</body>
+
+</html>
