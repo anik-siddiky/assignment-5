@@ -12,7 +12,7 @@ totalCompletedElem.innerText = totalCompletedCount;
 function addToActivityLog(taskText) {
     const logEntry = document.createElement('p');
     logEntry.innerText = `✅ ${taskText} completed`;
-    logEntry.className = 'text-sm text-gray-600 mt-1';
+    logEntry.className = 'text-sm text-gray-600 mt-7 bg-[#F4F7FF] rounded-lg p-2.5';
     taskLogContainer.appendChild(logEntry);
 }
 
@@ -20,6 +20,7 @@ for (let i = 0; i < completeButtons.length; i++) {
     completeButtons[i].addEventListener('click', function (event) {
         const button = event.target;
         if (!button.disabled) {
+            alert("Board Updated Successful...");
             taskAssignedCount--;
             totalCompletedCount++;
             taskAssignedElem.innerText = taskAssignedCount;
