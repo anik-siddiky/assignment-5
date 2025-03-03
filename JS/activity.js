@@ -36,6 +36,18 @@ for (let i = 0; i < completeButtons.length; i++) {
 
             const taskTitle = taskTitleElems[i].innerText;
             addToActivityLog(taskTitle);
+
+            let allBtnDisabled = true;
+            for (let j = 0; j < completeButtons.length; j++) {
+                if (!completeButtons[j].disabled) {
+                    allBtnDisabled = false;
+                    break;
+                }
+            }
+
+            if (allBtnDisabled) {
+                alert("Congrats!! You have completed all the current tasks!");
+            }
         }
     });
 }
