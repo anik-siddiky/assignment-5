@@ -1,311 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevBoard</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
 
     <!-- Tailwind and DaisyUI CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
     <!-- Font Awesome CDN -->
-    <script
-      src="https://kit.fontawesome.com/b790b3a4b4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <script src="https://kit.fontawesome.com/b790b3a4b4.js" crossorigin="anonymous"></script>
+</head>
 
-  <body id="body" class="font-[Poppins] bg-[#F4F7FF] pt-6">
+<body id="body" class="font-[Poppins] bg-[#F4F7FF] pt-6">
     <header class="w-11/12 mx-auto">
-      <section class="bg-white flex items-center justify-between rounded-2xl">
-        <a href="/index.html">
-          <div class="flex items-center p-5 gap-3">
-            <div>
-              <img class="hover:cursor-pointer" src="assets/logo.png" alt="" />
-            </div>
-            <div>
-              <h1 class="font-light text-4xl hover:cursor-pointer">
-                Dev<span class="font-bold">Board</span>
-              </h1>
-            </div>
-          </div>
-        </a>
+        <section class="bg-white flex items-center justify-between rounded-2xl">
+            <a href="/index.html">
+                <div class="flex items-center p-5 gap-3">
+                    <div>
+                        <img class="hover:cursor-pointer" src="assets/logo.png" alt="" />
+                    </div>
+                    <div>
+                        <h1 class="font-light text-4xl hover:cursor-pointer">
+                            Dev<span class="font-bold">Board</span>
+                        </h1>
+                    </div>
+                </div>
+            </a>
 
-        <div class="flex gap-9 p-5">
-          <div
-            class="flex items-center gap-3 bg-[#F4F7FF] px-4 py-2 rounded-[32px]"
-          >
-            <div>
-              <img
-                class="hover:cursor-pointer"
-                src="assets/checkbox.png"
-                alt=""
-              />
+            <div class="flex gap-9 p-5">
+                <div class="flex items-center gap-3 bg-[#F4F7FF] px-4 py-2 rounded-[32px]">
+                    <div>
+                        <img class="hover:cursor-pointer" src="assets/checkbox.png" alt="" />
+                    </div>
+                    <div>
+                        <h4 id="total-completed-job" class="text-3xl font-bold">23</h4>
+                    </div>
+                </div>
+                <div class="p-3 bg-[#F4F7FF] rounded-full">
+                    <img id="change-bg-color" class="hover:cursor-pointer" src="assets/theme-btn.png" alt="" />
+                </div>
             </div>
-            <div>
-              <h4 id="total-completed-job" class="text-3xl font-bold">23</h4>
-            </div>
-          </div>
-          <div class="p-3 bg-[#F4F7FF] rounded-full">
-            <img
-              id="change-bg-color"
-              class="hover:cursor-pointer"
-              src="assets/theme-btn.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
+        </section>
     </header>
     <main>
-      <section class="w-11/12 mx-auto rounded-2xl">
-        <div class="flex flex-row mt-5 gap-5">
-          <div class="w-9/12">
-            <!-- Top section -->
-            <div
-              class="flex justify-between gap-5 p-6 mb-5 bg-white rounded-2xl"
-            >
-              <div class="flex gap-5 items-center bg-[#F4F7FF] p-7 rounded-xl">
-                <div class="p-4 rounded-full bg-white">
-                  <img src="assets/checkbox.png" alt="" />
-                </div>
-                <div>
-                  <p class="text-[#00303C]">Task Assigned </p>
-                  <h5 id="task-assigned" class="text-3xl font-bold">6</h5>
-                </div>
-              </div>
-              <a href="blog.html">
-                <div
-                  class="flex gap-5 items-center rounded-xl py-6 pl-10 pr-20 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]"
-                >
-                  <div>
-                    <img src="assets/board.png" alt="" />
-                  </div>
-                  <div>
-                    <h2 class="text-2xl text-white">
-                      Discover Something New Today!
-                    </h2>
-                  </div>
-                </div>
-              </a>
-              <div
-                class="bg-[#F4F7FF] rounded-xl flex items-center py-[30px] px-10 gap-4"
-              >
-                <div class="p-4 rounded-full bg-white">
-                  <img src="assets/calender.png" alt="" />
-                </div>
-                <div>
-                  <p class="text-xl">
-                    Wed, <br />
-                    <span class="font-bold">Jul 28 2025</span>
-                  </p>
-                </div>
-              </div>
-            </div>
+        <section class="w-11/12 mx-auto rounded-2xl">
+            <div class="flex flex-row mt-5 gap-5">
+                <div class="w-9/12">
+                    <!-- Top section -->
+                    <div class="flex justify-between gap-5 p-6 mb-5 bg-white rounded-2xl">
+                        <div class="flex gap-5 items-center bg-[#F4F7FF] p-7 rounded-xl">
+                            <div class="p-4 rounded-full bg-white">
+                                <img src="assets/checkbox.png" alt="" />
+                            </div>
+                            <div>
+                                <p class="text-[#00303C]">Task Assigned </p>
+                                <h5 id="task-assigned" class="text-3xl font-bold">6</h5>
+                            </div>
+                        </div>
+                        <a href="blog.html">
+                            <div
+                                class="flex gap-5 items-center rounded-xl py-6 pl-10 pr-20 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                                <div>
+                                    <img src="assets/board.png" alt="" />
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl text-white">
+                                        Discover Something New Today!
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="bg-[#F4F7FF] rounded-xl flex items-center py-[30px] px-10 gap-4">
+                            <div class="p-4 rounded-full bg-white">
+                                <img src="assets/calender.png" alt="" />
+                            </div>
+                            <div id="date" class="text-xl">
+                                <p>Wed, Jul 28 2025</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Six Task Section -->
-            <div
-              class="grid grid-cols-3 gap-9 bg-white rounded-2xl p-6 task-card"
-            >
-              <!-- Card 1 -->
-              <div class="bg-[#F4F7FF] rounded-lg p-6">
-                <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
-                  ShopEase
-                </h4>
-                <h3 class="task-title font-medium text-2xl mt-4">
-                  Fix Mobile Button Issue
-                </h3>
-                <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
-                  <p>
-                    Ensure the mobile button functions properly by fixing
-                    alignment
-                  </p>
+                    <!-- Six Task Section -->
+                    <div class="grid grid-cols-3 gap-9 bg-white rounded-2xl p-6 task-card">
+                        <!-- Card 1 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-6">
+                            <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
+                                ShopEase
+                            </h4>
+                            <h3 class="task-title font-medium text-2xl mt-4">
+                                Fix Mobile Button Issue
+                            </h3>
+                            <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                                <p>
+                                    Ensure the mobile button functions properly by fixing
+                                    alignment
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <p class="text-sm">Deadline</p>
+                                    <h4 class="font-medium">21 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button
+                                        class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-6">
+                            <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
+                                CloudSync
+                            </h4>
+                            <h3 class="task-title font-medium text-2xl mt-4">
+                                Add Dark Mode
+                            </h3>
+                            <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                                <p>
+                                    Implement a dark mode feature to enhance user experience
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <p class="text-sm">Deadline</p>
+                                    <h4 class="font-medium">23 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button
+                                        class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-6">
+                            <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
+                                SwiftPay
+                            </h4>
+                            <h3 class="task-title font-medium text-2xl mt-4">
+                                Optimize Home page
+                            </h3>
+                            <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                                <p>
+                                    Enhance the homepage by improving performance for better
+                                    engagement.
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <p class="text-sm">Deadline</p>
+                                    <h4 class="font-medium">25 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button
+                                        class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-6">
+                            <h4 class="bg-white inline-block py-2 px-4 rounded-lg">Meta</h4>
+                            <h3 class="task-title font-medium text-2xl mt-4">
+                                Add new emoji 🤲
+                            </h3>
+                            <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                                <p>
+                                    Include the emoji to expand user expression and interaction
+                                    options
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <p class="text-sm">Deadline</p>
+                                    <h4 class="font-medium">27 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button
+                                        class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-6">
+                            <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
+                                Google LLC
+                            </h4>
+                            <h3 class="task-title font-medium text-2xl mt-4">
+                                Integrate OpenAI API
+                            </h3>
+                            <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                                <p>
+                                    Connect the OpenAI API to enable advanced AI-powered
+                                    features
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <p class="text-sm">Deadline</p>
+                                    <h4 class="font-medium">29 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button
+                                        class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-6">
+                            <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
+                                Glassdoar
+                            </h4>
+                            <h3 class="task-title font-medium text-2xl mt-4">
+                                Improve Job searching
+                            </h3>
+                            <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
+                                <p>Improve Glassdoor job search by refining filters</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <p class="text-sm">Deadline</p>
+                                    <h4 class="font-medium">31 March 2025</h4>
+                                </div>
+                                <div>
+                                    <button
+                                        class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                                        Completed
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex justify-between items-center mt-4">
-                  <div>
-                    <p class="text-sm">Deadline</p>
-                    <h4 class="font-medium">21 March 2025</h4>
-                  </div>
-                  <div>
-                    <button
-                      class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="bg-[#F4F7FF] rounded-lg p-6">
-                <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
-                  CloudSync
-                </h4>
-                <h3 class="task-title font-medium text-2xl mt-4">
-                  Add Dark Mode
-                </h3>
-                <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
-                  <p>
-                    Implement a dark mode feature to enhance user experience
-                  </p>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                  <div>
-                    <p class="text-sm">Deadline</p>
-                    <h4 class="font-medium">23 March 2025</h4>
-                  </div>
-                  <div>
-                    <button
-                      class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="bg-[#F4F7FF] rounded-lg p-6">
-                <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
-                  SwiftPay
-                </h4>
-                <h3 class="task-title font-medium text-2xl mt-4">
-                  Optimize Home page
-                </h3>
-                <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
-                  <p>
-                    Enhance the homepage by improving performance for better
-                    engagement.
-                  </p>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                  <div>
-                    <p class="text-sm">Deadline</p>
-                    <h4 class="font-medium">25 March 2025</h4>
-                  </div>
-                  <div>
-                    <button
-                      class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 4 -->
-              <div class="bg-[#F4F7FF] rounded-lg p-6">
-                <h4 class="bg-white inline-block py-2 px-4 rounded-lg">Meta</h4>
-                <h3 class="task-title font-medium text-2xl mt-4">
-                  Add new emoji 🤲
-                </h3>
-                <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
-                  <p>
-                    Include the emoji to expand user expression and interaction
-                    options
-                  </p>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                  <div>
-                    <p class="text-sm">Deadline</p>
-                    <h4 class="font-medium">27 March 2025</h4>
-                  </div>
-                  <div>
-                    <button
-                      class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 5 -->
-              <div class="bg-[#F4F7FF] rounded-lg p-6">
-                <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
-                  Google LLC
-                </h4>
-                <h3 class="task-title font-medium text-2xl mt-4">
-                  Integrate OpenAI API
-                </h3>
-                <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
-                  <p>
-                    Connect the OpenAI API to enable advanced AI-powered
-                    features
-                  </p>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                  <div>
-                    <p class="text-sm">Deadline</p>
-                    <h4 class="font-medium">29 March 2025</h4>
-                  </div>
-                  <div>
-                    <button
-                      class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 6 -->
-              <div class="bg-[#F4F7FF] rounded-lg p-6">
-                <h4 class="bg-white inline-block py-2 px-4 rounded-lg">
-                  Glassdoar
-                </h4>
-                <h3 class="task-title font-medium text-2xl mt-4">
-                  Improve Job searching
-                </h3>
-                <div class="bg-white p-4 rounded-lg text-black/30 mt-4">
-                  <p>Improve Glassdoor job search by refining filters</p>
-                </div>
-                <div class="flex justify-between items-center mt-4">
-                  <div>
-                    <p class="text-sm">Deadline</p>
-                    <h4 class="font-medium">31 March 2025</h4>
-                  </div>
-                  <div>
-                    <button
-                      class="complete-btn bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-                    >
-                      Completed
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="w-3/12 pt-10 px-5 bg-white rounded-2xl">
-            <div class="flex gap-2 justify-center">
-              <img src="assets/activity.png" alt="" />
-              <p class="font-medium text-xl">Activity Log</p>
-            </div>
-            <div class="flex justify-center mt-4">
-              <button
-                id="clear-logs"
-                class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none"
-              >
-                Clear History
-              </button>
-            </div>
+                <div class="w-3/12 pt-10 px-5 bg-white rounded-2xl">
+                    <div class="flex gap-2 justify-center">
+                        <img src="assets/activity.png" alt="" />
+                        <p class="font-medium text-xl">Activity Log</p>
+                    </div>
+                    <div class="flex justify-center mt-4">
+                        <button id="clear-logs"
+                            class="bg-[#3752FD] btn btn-primary font-medium py-2.5 px-5 text-white rounded-lg hover:cursor-pointer border-none">
+                            Clear History
+                        </button>
+                    </div>
 
-            <div id="task-log" class="activity-log-container mt-8"></div>
-          </div>
-        </div>
-      </section>
+                    <div id="task-log" class="activity-log-container mt-8"></div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="JS/dateUpdate.js"></script>
     <script src="JS/activity.js"></script>
     <script src="JS/colorChange.js"></script>
-  </body>
+</body>
+
 </html>
